@@ -692,7 +692,18 @@ const t = (clientIndex>=0 && state.clients?.[clientIndex]?.tariffs) ? state.clie
   doc.rect(0,0,pageW,70,'F');
   try{
     const logo = await imgToDataURL('assets/logo-workhours-dark.png');
-    doc.addImage(logo,'PNG',(pageW-160)/2,8,160,54);
+    const imgWidth = 160;
+const imgProps = doc.getImageProperties(logo);
+const imgHeight = (imgProps.height * imgWidth) / imgProps.width;
+
+doc.addImage(
+  logo,
+  'PNG',
+  (pageW - imgWidth) / 2,
+  8,
+  imgWidth,
+  imgHeight
+);
   }catch(_){}
   const co = state.company || {};
   const cli = (typeof clientIndex === 'number' && clientIndex >= 0) ? (state.clients?.[clientIndex] || null) : null;
