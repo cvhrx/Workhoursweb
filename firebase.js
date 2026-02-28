@@ -1,8 +1,8 @@
 const FB_CONFIG = {
-  apiKey: "AIzaSyA49NgSPeAVUg9vfnnCUj4joXXbgsAsKbA",
-  authDomain: "fattureglf.firebaseapp.com",
-  projectId: "fattureglf",
-  storageBucket: "fattureglf.firebasestorage.app",
-  messagingSenderId: "556158613585",
-  appId: "1:556158613585:web:a88fa2f37a668d9b6c6070"}; 
+apiKey: "AIzaSyDCdInFMIn2v2q8bP3UtoqqDS-Qbc5JaZM",
+    authDomain: "workhours99-ba368.firebaseapp.com",
+    projectId: "workhours99-ba368",
+    storageBucket: "workhours99-ba368.firebasestorage.app",
+    messagingSenderId: "280599205375",
+    appId: "1:280599205375:web:014f729256e4d7e20f03ca"
 firebase.initializeApp(FB_CONFIG);
