@@ -691,7 +691,7 @@ const t = (clientIndex>=0 && state.clients?.[clientIndex]?.tariffs) ? state.clie
   doc.setFillColor(30,42,56);
   doc.rect(0,0,pageW,70,'F');
   try{
-    const logo = await imgToDataURL('assets/logo.png');
+    const logo = await imgToDataURL('assets/logo-workhours-light.png');
     doc.addImage(logo,'PNG',(pageW-160)/2,8,160,54);
   }catch(_){}
   const co = state.company || {};
